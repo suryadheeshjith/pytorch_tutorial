@@ -20,9 +20,11 @@ x = torch.randn(3, requires_grad=True)
 
 y = x * 2
 while y.data.norm() < 10:
-    print(y.data)
     y = y * 2
 
 print(y)
 
 
+v = torch.tensor([0.1, 1.0, 0.0001], dtype=torch.float)
+y.backward(v)
+print(x.grad)
