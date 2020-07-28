@@ -1,2 +1,4 @@
 # pytorch_tutorial
-pytorch testing!
+
+
+Learning Pytorch from the official documentation!
